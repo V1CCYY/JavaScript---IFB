@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Captura de Formulário</title>
+</head>
+
+<body>
+
+    <p id="mensagem">Olá, mundo!</p>
+    
+    <p>Primeiro</p>
+    <p>Segundo</p>
+    
+    <div class="bloco">Bloco 1</div>
+    <div class="bloco">Bloco 2</div>
+    
+    <button class="botao">Botão 1</button>
+    <button class="botao">Botão 2</button>
+    <button>Botão sem classe</button>
+    
+    <p class="destaque">Parágrafo 1</p>
+    <p>Parágrafo 2</p>
+
+    <div id="pai">
+        <p id="filho">Texto</p>
+    </div>
+
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <p id="p1">Um</p>
+    <p id="p2">Dois</p>
+
+    <div id="minhaDiv">
+        <p>Este é um <strong>parágrafo</strong> dentro da div.</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </div>
+
+    <div id="areaDeConteudo">
+        <p>Conteúdo original.</p>
+    </div>
+
+    <button onclick="mudarConteudo()">Mudar Conteúdo</button>
+
+    <p id="paragrafoExemplo">
+        Este é um parágrafo com <strong>texto em negrito</strong> e uma <em>tag ítalico</em>
+    </p>
+
+    <img id="imagem" src="https://th.bing.com/th/id/R.ccb233dc69ee89d18251169b9ad3bde6?rik=MMsConn6LuJR1w&pid=ImgRaw&r=0" alt="Uma foto de Exemplo">
+    
+    <button onclick="mudarImagem()">Mudar Imagem</button>
+
+    <script>
+
+        let minhaMensagem = document.getElementById("mensagem");
+        console.log(minhaMensagem.innerText);
+
+        let paragrafos = document.getElementsByTagName("p");
+        console.log(paragrafos[0].innerText);
+
+        let blocos = document.getElementsByClassName("bloco");
+        console.log(blocos[1].innerText);
+
+        let botoes = document.getElementsByClassName('botao');
+        
+        for(let i = 0; i < botoes.length; i++){
+            botoes[i].style.backgroundColor = 'blue';
+        }
+
+        let item = document.querySelector(".destaque");
+        console.log(item.innerText);
+        
+        let todos = document.querySelectorAll("p");
+        console.log(todos.length);
+
+        let p = document.getElementById("filho");
+        console.log(p.parentNode.id);
+
+        let ul = document.getElementById("lista");
+        console.log(ul.children);
+        console.log(ul.childNodes);
+        console.log(ul.firstElementChild.innerText);
+        console.log(ul.lastElementChild.innerText);
+
+        let p1 = document.getElementById("p1");
+        console.log(p1.nextElementSibling.innerText);
+
+        let p2 = document.getElementById("p2");
+        console.log(p2.previousElementSibling.innerText);
+
+        const minhaDiv = document.getElementById('minhaDiv');
+        const conteudoDiv = minhaDiv.innerHTML;
+
+        console.log(conteudoDiv);
+
+        function mudarConteudo(){
+        const area = document.getElementById('areaDeConteudo');
+
+        area.innerHTML = `
+                <h2>Novo Título</h2>
+                <p>Este é um <em>novo</em> parágrafo adicionado dinamicamente.</p>
+                <img src"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1R5f7bO2vJXyWafwQIYK7IRiEl_fLB0T5iQ&s" alt="Imagem Dinâmica">
+        `;
+       }
+
+       const paragrafoExemplo = document.getElementById('paragrafoExemplo');
+       const textoPuro = paragrafoExemplo.textContent;
+
+       console.log(textoPuro);
+
+       function mudarImagem() {
+        let img = document.getElementById("imagem");
+
+        console.log("Src antes da mudança:", img.getAttribute("src"));
+
+        img.setAttribute("src", "https://pixabay.com/accounts/auth/google/?state=register%7Cgoogle_one_tap%7C/pt/photos/http-www-rmxconstruction-2363519/%3A1w6Bqj%3AclcsWBxB-1p0_5MJVPiLrxi1tGw4xRoAXHO_AsU1pPg");
+
+        console.log("Src depois da mudança:", img.getAttribute("src"));
+
+        img.setAttribute("style", "border: 2px solid blue;");
+
+        img.setAttribute("alt", "Nova foto do pôr do sol");
+       }
+    </script>
+
+</body>
+</html>

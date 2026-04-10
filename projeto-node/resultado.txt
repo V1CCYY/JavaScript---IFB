@@ -1,0 +1,9 @@
+RELATÓRIO DE NOTAS - IFB
+==========================
+
+Aluno: Julio Cezar | Média: 8.0 | Status: APROVADO
+Aluno: Gabriel Torres | Média: 7.5 | Status: APROVADO
+Aluno: Victhor Gladistone | Média: 6.8 | Status: APROVADO
+Aluno: Iohanna Katarina | Média: 7.8 | Status: APROVADO
+Aluno: Arthur Alves | Média: 7.8 | Status: APROVADO
+Aluno: Maria Madalena | Média: 8.5 | Status: APROVADO

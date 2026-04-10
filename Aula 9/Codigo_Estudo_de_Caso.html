@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas - Estudo de Caso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #lista {
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Minha Lista de Tarefas</h1>    
+
+    <input type="text" id="novaTarefa" placeholder="Digite a tarefa aqui" />
+
+    <button id="adicionar">Adicionar Tarefa</button>
+
+    <ul id="lista">
+
+    </ul>
+
+    <script>
+
+        const campoTarefa = document.getElementById('novaTarefa');
+        const botaoAdicionar = document.getElementById('adicionar');
+        const listaTarefas = document.getElementById('lista');
+
+        botaoAdicionar.addEventListener('click', function () {
+            const textoTarefa = campoTarefa.value;
+
+            if (textoTarefa.trim() !== '') {
+                const novaTarefa = document.createElement('li');
+
+                novaTarefa.innerText = textoTarefa;
+
+                listaTarefas.appendChild(novaTarefa);
+
+                campoTarefa.value = '';
+            } else {
+                alert('Por favor, digite uma tarefa antes de adicionar:');
+            }
+        });
+
+    </script>
+
+</body>
+</html>
