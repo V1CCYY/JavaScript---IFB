@@ -14,6 +14,11 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/css' });
         res.end(fs.readFileSync('./public/style.css'));
     }
+    else if (url === '/api/produtos' && method === 'GET') {
+        const lista = await Produto.listar();
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify(lista));
+    }
     else if (url === '/api/produtos' && method === 'POST') {
         let corpo = '';
         req.on('data', chunk => { corpo += chunk.toString(); });
