@@ -1,0 +1,87 @@
+RELATÓRIO DE PRÉVIA SALARIAL
+==========================
+
+
+Funcionario: Paulo 
+        
+Salário Bruto: 1900 
+        
+(-) INSS (11%): 209 
+        
+(+) FGTS (8%): 152
+        
+(i) 1ª Parcela 13°: R$ 950 
+        
+(=) Salário Líquido: R$ 1691
+        
+==========================
+
+Funcionario: Joaquim 
+        
+Salário Bruto: 2100 
+        
+(-) INSS (11%): 231 
+        
+(+) FGTS (8%): 168
+        
+(i) 1ª Parcela 13°: R$ 1050 
+        
+(=) Salário Líquido: R$ 1869
+        
+==========================
+
+Funcionario: Paloma 
+        
+Salário Bruto: 3000 
+        
+(-) INSS (11%): 330 
+        
+(+) FGTS (8%): 240
+        
+(i) 1ª Parcela 13°: R$ 1500 
+        
+(=) Salário Líquido: R$ 2670
+        
+==========================
+
+Funcionario: Jenifer 
+        
+Salário Bruto: 2000 
+        
+(-) INSS (11%): 220 
+        
+(+) FGTS (8%): 160
+        
+(i) 1ª Parcela 13°: R$ 1000 
+        
+(=) Salário Líquido: R$ 1780
+        
+==========================
+
+Funcionario: Samira 
+        
+Salário Bruto: 2500 
+        
+(-) INSS (11%): 275 
+        
+(+) FGTS (8%): 200
+        
+(i) 1ª Parcela 13°: R$ 1250 
+        
+(=) Salário Líquido: R$ 2225
+        
+==========================
+
+Funcionario: Joelintom 
+        
+Salário Bruto: 2100 
+        
+(-) INSS (11%): 231 
+        
+(+) FGTS (8%): 168
+        
+(i) 1ª Parcela 13°: R$ 1050 
+        
+(=) Salário Líquido: R$ 1869
+        
+==========================
